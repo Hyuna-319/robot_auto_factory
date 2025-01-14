@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyWindow</class>
+ <widget class="QMainWindow" name="MyWindow">
+  <property name="windowTitle">
+   <string>터틀봇 조종 GUI</string>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>100</x>
+    <y>100</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <!-- 상단 레이아웃: 실시간 영상과 YOLO 이미지 -->
+    <item>
+     <layout class="QHBoxLayout" name="topLayout">
+      <!-- 실시간 웹캠 영상 표시 -->
+      <item>
+       <widget class="QLabel" name="videoLabel">
+        <property name="fixedSize">
+         <size>
+          <width>640</width>
+          <height>480</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>border: 1px solid black;</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="text">
+         <string>실시간 웹캠 영상</string>
+        </property>
+       </widget>
+      </item>
+      <!-- YOLO 이미지 레이아웃 -->
+      <item>
+       <layout class="QVBoxLayout" name="yoloLayout">
+        <item>
+         <widget class="QLabel" name="yoloStartLabel">
+          <property name="fixedSize">
+           <size>
+            <width>320</width>
+            <height>240</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string>border: 1px solid black;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="text">
+           <string>YOLO Start Image</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="yoloEndLabel">
+          <property name="fixedSize">
+           <size>
+            <width>320</width>
+            <height>240</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string>border: 1px solid black;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="text">
+           <string>YOLO End Image</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <!-- 로딩바 및 상태 레이블 -->
+    <item>
+     <layout class="QVBoxLayout" name="loadingLayout">
+      <item>
+       <widget class="QProgressBar" name="loadingBar">
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="value">
+         <number>0</number>
+        </property>
+        <property name="textVisible">
+         <bool>false</bool>
+        </property>
+        <property name="fixedHeight">
+         <number>30</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="stateLabel">
+        <property name="text">
+         <string>현재 상태: 명령 받았음 (0)</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="styleSheet">
+         <string>font-size: 14px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <!-- 중간 레이아웃: 작업 목록 및 컨트롤 -->
+    <item>
+     <layout class="QHBoxLayout" name="middleLayout">
+      <!-- 작업 목록 그룹 -->
+      <item>
+       <widget class="QGroupBox" name="jobGroup">
+        <property name="title">
+         <string>작업 목록</string>
+        </property>
+        <layout class="QVBoxLayout" name="jobLayout">
+         <item>
+          <widget class="QListWidget" name="jobList">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="jobTimeLabel">
+           <property name="text">
+            <string>소요 시간: 0초</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="styleSheet">
+            <string>font-size: 16px;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <!-- 컨트롤 그룹 -->
+      <item>
+       <widget class="QGroupBox" name="controlGroup">
+        <property name="title">
+         <string>수동 조종</string>
+        </property>
+        <layout class="QVBoxLayout" name="controlLayout">
+         <!-- 수동 조종 버튼 -->
+         <item>
+          <layout class="QHBoxLayout" name="manualControlsLayout">
+           <item>
+            <widget class="QPushButton" name="playButton">
+             <property name="text">
+              <string>Play</string>
+             </property>
+             <property name="fixedSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="stopButton">
+             <property name="text">
+              <string>Stop</string>
+             </property>
+             <property name="fixedSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pauseButton">
+             <property name="text">
+              <string>Pause</string>
+             </property>
+             <property name="fixedSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="resumeButton">
+             <property name="text">
+              <string>Resume</string>
+             </property>
+             <property name="fixedSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="resetButton">
+             <property name="text">
+              <string>Reset</string>
+             </property>
+             <property name="fixedSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <!-- 컨베이어 조종 버튼 -->
+         <item>
+          <layout class="QHBoxLayout" name="conveyorLayout">
+           <item>
+            <widget class="QPushButton" name="conveyorOnButton">
+             <property name="text">
+              <string>On</string>
+             </property>
+             <property name="fixedSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="conveyorOffButton">
+             <property name="text">
+              <string>Off</string>
+             </property>
+             <property name="fixedSize">
+              <size>
+               <width>100</width>
+               <height>50</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <customwidgets/>
+</ui>

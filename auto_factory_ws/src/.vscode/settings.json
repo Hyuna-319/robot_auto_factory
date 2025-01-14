@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/seokhwan/ROS/ff_ws/install/user_gui/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/state_publisher/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/pyqt_login/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/order_listener/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/order_belt_listener/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/image_publisher/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/build/ff_gui",
+        "/home/seokhwan/ROS/ff_ws/install/ff_gui/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/seokhwan/ROS/ff_ws/install/user_gui/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/state_publisher/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/pyqt_login/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/order_listener/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/order_belt_listener/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/install/image_publisher/lib/python3.10/site-packages",
+        "/home/seokhwan/ROS/ff_ws/build/ff_gui",
+        "/home/seokhwan/ROS/ff_ws/install/ff_gui/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

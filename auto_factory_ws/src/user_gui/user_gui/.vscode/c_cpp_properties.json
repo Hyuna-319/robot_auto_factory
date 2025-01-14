@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hyuna/turtlebot3_ws/install/turtlebot3_fake_node/include/**",
+        "/home/hyuna/turtlebot3_ws/install/turtlebot3_msgs/include/**",
+        "/home/hyuna/turtlebot3_ws/install/turtlebot3_gazebo/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/hyuna/f4_drive3/src/DynamixelSDK/dynamixel_sdk/include/**",
+        "/home/hyuna/f4_drive3/src/DynamixelSDK/dynamixel_sdk_examples/include/**",
+        "/home/hyuna/f4_drive3/src/dynamixel-workbench/dynamixel_workbench_toolbox/include/**",
+        "/home/hyuna/f4_drive3/src/open_manipulator/open_manipulator_x_controller/include/**",
+        "/home/hyuna/f4_drive3/src/open_manipulator/open_manipulator_x_libs/include/**",
+        "/home/hyuna/f4_drive3/src/robotis_manipulator/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
