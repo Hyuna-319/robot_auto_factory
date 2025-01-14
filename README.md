@@ -13,7 +13,7 @@ Turtlebot3, Openmanipulator-X를 활용한 컨베이어 벨트 물류 자동화 
 인원 및 기간
 -------------
 * 3명: [김현아](https://github.com/Hyuna-319), [장석환](https://github.com/JSH0101), [홍유진](https://github.com/dbwls99706)
-* 2024.11.26 ~ 2024.12.02 (7일)
+* 2024.19 ~ 2024.11.25 (7일)
   
 <br> 
 
