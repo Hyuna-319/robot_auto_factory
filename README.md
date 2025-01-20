@@ -5,7 +5,7 @@ Turtlebot3, Openmanipulator-X를 활용한 컨베이어 벨트 물류 자동화 
 
 
 
-[프로젝트 기록](https://velog.io/@cherry0319/%EC%82%AC%EB%82%B4-%EC%B9%B4%ED%8E%98-%EC%84%9C%EB%B9%99-%EB%A1%9C%EB%B4%87-%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%EC%85%98) 
+[프로젝트 기록](https://velog.io/@cherry0319/ROS2%EA%B8%B0%EB%B0%98-%EB%AC%BC%EB%A5%98-%EC%9E%90%EB%8F%99%ED%99%94-%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B5%AC%EC%B6%95) 
 
 <br>
 
