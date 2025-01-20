@@ -26,8 +26,8 @@ def yolo_to_real(x, y):
     B_y = 195.907
 
     # 변환된 좌표 계산
-    real_x = A_x * x
-    real_y = A_y * y + B_y
+    real_x = A_x * x # 수평좌표
+    real_y = A_y * y + B_y # 수직좌표
 
     return real_x, real_y
 class YoloZoneNode(Node):
