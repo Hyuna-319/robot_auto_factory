@@ -22,7 +22,7 @@ Turtlebot3, Openmanipulator-X를 활용한 컨베이어 벨트 물류 자동화 
 * Language : Python3
 * OS : Linux Ubuntu 22.04 jammy
 * Hardware : Turtlebot3 waffle, Openmanipulator-X, Arduino, Conveir belt
-* Skills : ROS2 Humble,Openmanipulator-x Packages, OpenCV, YOLOv8, PyQT5
+* Skills : ROS2 Humble,Openmanipulator-x Packages, OpenCV, YOLOv8, PyQt5
 
 <br>
 
